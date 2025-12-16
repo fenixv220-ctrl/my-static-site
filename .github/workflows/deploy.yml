@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Шаг 1: Checkout кода
+    # Шаг 1: Checkout кода
     - name: Checkout code
       uses: actions/checkout@v4
       # Шаг 2: Setup Node.js (может пригодиться для более сложных сборок)
@@ -25,7 +25,6 @@ jobs:
       with:
       pattern: "**/*.html"
       level: warning
-
       # Шаг 4: Деплой на GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
